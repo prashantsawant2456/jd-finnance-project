@@ -93,7 +93,7 @@ public class UserListAdapter extends RecyclerView.Adapter {
             if (Utility.isNetworkConnected(context)) {
                 hitAPI.execute();
             } else {
-                Utility.ShowToast(context, "kindly Check you internet connection");
+                Utility.ShowToast(context, mainActivity.getString(R.string.internet_warring));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -106,7 +106,6 @@ public class UserListAdapter extends RecyclerView.Adapter {
             super.handleMessage(msg);
             Bundle bundle = msg.getData();
             int code = bundle.getInt(Utility.code);
-            String message;
             switch (code) {
                 case Utility.success:
                     try {

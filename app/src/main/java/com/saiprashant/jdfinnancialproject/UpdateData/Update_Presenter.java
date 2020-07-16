@@ -55,7 +55,6 @@ public class Update_Presenter {
             super.handleMessage(msg);
             Bundle bundle = msg.getData();
             int code = bundle.getInt(Utility.code);
-            String message;
             switch (code) {
                 case Utility.success:
                     try {

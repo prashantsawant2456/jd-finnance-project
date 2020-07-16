@@ -7,6 +7,7 @@ import android.os.Message;
 
 import com.saiprashant.jdfinnancialproject.APIHit.HitAPI;
 import com.saiprashant.jdfinnancialproject.Activity.MainActivity;
+import com.saiprashant.jdfinnancialproject.R;
 import com.saiprashant.jdfinnancialproject.Utility.Utility;
 
 import org.json.JSONObject;
@@ -37,7 +38,7 @@ public class HomeFrag_Presenter {
             if (Utility.isNetworkConnected(context)) {
                 hitAPI.execute();
             } else {
-                Utility.ShowToast(context, "kindly Check you internet connection");
+                Utility.ShowToast(context, mainActivity.getString(R.string.internet_warring));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,7 +51,6 @@ public class HomeFrag_Presenter {
             super.handleMessage(msg);
             Bundle bundle = msg.getData();
             int code = bundle.getInt(Utility.code);
-            String message;
             switch (code) {
                 case Utility.success:
                     try {

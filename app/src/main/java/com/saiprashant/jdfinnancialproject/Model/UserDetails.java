@@ -11,48 +11,24 @@ public class UserDetails {
         return investment_name;
     }
 
-    public void setInvestment_name(String investment_name) {
-        this.investment_name = investment_name;
-    }
-
     public String getDate_of_purchase() {
         return date_of_purchase;
-    }
-
-    public void setDate_of_purchase(String date_of_purchase) {
-        this.date_of_purchase = date_of_purchase;
     }
 
     public String getNum_of_unit() {
         return num_of_unit;
     }
 
-    public void setNum_of_unit(String num_of_unit) {
-        this.num_of_unit = num_of_unit;
-    }
-
     public String getPurchase_price() {
         return purchase_price;
-    }
-
-    public void setPurchase_price(String purchase_price) {
-        this.purchase_price = purchase_price;
     }
 
     public int getRecurring() {
         return recurring;
     }
 
-    public void setRecurring(int recurring) {
-        this.recurring = recurring;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
 
@@ -70,9 +46,9 @@ public class UserDetails {
             if (jsonObject.has("num_of_unit")) {
                 num_of_unit = jsonObject.getString("num_of_unit");
             }
+
             if (jsonObject.has("purchase_date")) {
                 date_of_purchase = jsonObject.getString("purchase_date");
-
             }
             if (jsonObject.has("purchase_price")) {
                 purchase_price = jsonObject.getString("purchase_price");

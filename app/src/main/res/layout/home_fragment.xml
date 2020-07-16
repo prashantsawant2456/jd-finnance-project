@@ -16,7 +16,7 @@
             android:id="@+id/ti_investment_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Who is the investment for ?"
+            android:hint="@string/who_is_the_investment_for"
             android:textColorHint="@android:color/black">
 
             <EditText
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:text="is the equity one time or recurring?"></TextView>
+            android:text="@string/is_the_equity_one_time_or_recurring"></TextView>
 
 
         <LinearLayout
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Fixed" />
+                android:text="@string/fixed" />
 
             <Switch
                 android:id="@+id/switch_btn"
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Variable" />
+                android:text="@string/variable" />
 
         </LinearLayout>
 
@@ -67,7 +67,7 @@
             android:id="@+id/ti_date_of_purchase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date Of Purchase"
+            android:hint="@string/date_of_purchase"
             android:textColorHint="@android:color/black">
 
             <EditText
@@ -82,7 +82,7 @@
             android:id="@+id/ti_num_of_unit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Number Of Unit"
+            android:hint="@string/number_of_unit"
             android:textColorHint="@android:color/black">
 
             <EditText
@@ -98,7 +98,7 @@
             android:id="@+id/ti_purchase_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Purchase Price"
+            android:hint="@string/purchase_price"
             android:textColorHint="@android:color/black">
 
             <EditText
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Save Data" />
+            android:text="@string/save_data" />
 
         <Button
             android:id="@+id/btn_go_to_list"
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="go to list data" />
+            android:text="@string/go_to_list_data" />
     </LinearLayout>
 
 

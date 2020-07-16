@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">JD Finnancial Project</string>
+    <string name="internet_warring">kindly Check you internet connection</string>
+    <string name="error_investment_name">Please enter investment name</string>
+    <string name="error_purchase_date">Please enter  purchase date</string>
+    <string name="error_number_unit">Please enter number of unit</string>
+    <string name="error_purchase_price">Please enter purchase price</string>
+    <string name="who_is_the_investment_for">Who is the investment for ?</string>
+    <string name="fixed">Fixed</string>
+    <string name="variable">Variable</string>
+    <string name="save_data">Save Data</string>
+    <string name="go_to_list_data">go to list data</string>
+    <string name="is_the_equity_one_time_or_recurring">is the equity one time or recurring?</string>
+    <string name="date_of_purchase">Date Of Purchase</string>
+    <string name="number_of_unit">Number Of Unit</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="update_data">Update Data</string>
 </resources>

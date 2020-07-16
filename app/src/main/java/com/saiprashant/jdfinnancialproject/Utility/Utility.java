@@ -30,25 +30,7 @@ public class Utility {
         if (ni != null && ni.isConnectedOrConnecting()) {
             return true;
         } else {
-            // There are no active networks.
             return false;
         }
-    }
-
-    public static String setDateFormat(String parsedate, String str_outputFormat, String str_inputFormat) {
-
-        DateFormat outputFormat = new SimpleDateFormat(str_outputFormat);
-        DateFormat inputFormat = new SimpleDateFormat(str_inputFormat);
-        String inputText = parsedate; // 2019-04-09T07:00:59.000Z
-        String outputText = "";
-        Date date = null;
-        try {
-            date = inputFormat.parse(inputText);
-            outputText = outputFormat.format(date);
-            System.out.println("Date is : " + outputText);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return outputText;
     }
 }

@@ -159,18 +159,17 @@ public class Update_Fragment extends Fragment implements Update_Interface {
 
     public boolean validation() {
         boolean validate = true;
-
         if (et_investment_name.getText().length() == 0) {
-            et_investment_name.setError("Please enter investment name");
+            et_investment_name.setError(getString(R.string.error_investment_name));
             validate = false;
         } else if (et_date_of_purchase.getText().toString().length() == 0) {
-            et_date_of_purchase.setError("Please enter  purchase date");
+            et_date_of_purchase.setError(getString(R.string.error_purchase_date));
             validate = false;
         } else if (et_num_of_unit.getText().toString().length() == 0) {
-            et_num_of_unit.setError("Please enter number of unit");
+            et_num_of_unit.setError(getString(R.string.error_number_unit));
             validate = false;
         } else if (et_purchase_price.getText().toString().length() == 0) {
-            et_purchase_price.setError("Please enter purchase price");
+            et_purchase_price.setError(getString(R.string.error_purchase_price));
             validate = false;
         }
         return validate;
