@@ -1,0 +1,2 @@
+rootProject.name='JD Finnancial Project'
+include ':app'

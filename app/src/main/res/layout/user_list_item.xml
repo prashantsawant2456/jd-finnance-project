@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_investment_name"
+        style="@style/txt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name -: Prashant Sawant " />
+
+    <TextView
+        android:id="@+id/tv_purchase_price"
+        style="@style/txt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_investment_name"
+        android:text="Purchase Price -: 20039" />
+
+    <TextView
+        android:id="@+id/tv_purchase_date"
+        style="@style/txt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_purchase_price"
+        android:text="Purchase Date -: 20039" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/delete" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_purchase_date"
+        android:layout_marginTop="10dp"
+        android:background="#6200EE" />
+
+</RelativeLayout>
